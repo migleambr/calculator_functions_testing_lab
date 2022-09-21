@@ -112,15 +112,13 @@ describe('even', () => {
 
   test('can return true for even number', () => {
     actual = even(16);
-    expected = true;
-    expect(actual).toBe(expected);
+    expect(actual).toBeTruthy();
   }
   );
 
   test('can return false for odd number', () => {
     actual = even(3);
-    expected = false;
-    expect(actual).toBe(expected);
+    expect(actual).toBeFalsy();
   });
 
 });
@@ -129,15 +127,13 @@ describe('odd', () => {
 
   test('can return true for odd number', () => {
     actual = odd(7);
-    expected = true;
-    expect(actual).toBe(expected);
+    expect(actual).toBeTruthy();
   }
   );
 
   test('can return false for even number', () => {
     actual = odd(18);
-    expected = false;
-    expect(actual).toBe(expected);
+    expect(actual).toBeFalsy();
   }
   );
 
