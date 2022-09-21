@@ -92,6 +92,20 @@ describe('divide', () => {
 
 describe('modulus', () => {
 
+  test('can return modulus 0', () => {
+    actual = modulus(10, 5);
+    expected = 0;
+    expect(actual).toBe(expected);
+  }
+  );
+
+  test('can return modulus when one number is negative', () => {
+    actual = modulus(-7, 2);
+    expected = -1;
+    expect(actual).toBe(expected);
+  }
+  );
+
 });
 
 describe('even', () => {

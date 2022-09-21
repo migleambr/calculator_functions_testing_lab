@@ -14,7 +14,10 @@ const divide = (a, b) => {
     return a / b;
 };
 
-const modulus = null;
+const modulus = (a, b) => {
+    modulusNumber = a % b;
+    return modulusNumber;
+};
 
 const even = null;
 
