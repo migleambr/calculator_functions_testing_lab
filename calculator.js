@@ -28,7 +28,14 @@ const even = a => {
     }
 };
 
-const odd = null;
+const odd = b => {
+    modulusNumber = modulus(b, 2);
+    if (modulusNumber != 0) {
+        return true;
+    } else {
+        return false;
+    }
+};
 
 module.exports = { 
     sum, 
