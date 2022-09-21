@@ -6,7 +6,9 @@ const subtract = (a, b) => {
     return a - b;
 };
 
-const multiply = null;
+const multiply = (a, b) => {
+    return a * b;
+};
 
 const divide = null;
 

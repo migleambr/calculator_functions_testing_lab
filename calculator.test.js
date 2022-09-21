@@ -56,6 +56,20 @@ describe('subtract', () => {
 
 describe('multiply', () => {
 
+  test('can multiply zero', () => {
+    actual = multiply(3, 0);
+    expected = 0;
+    expect(actual).toBe(expected);
+  }
+  );
+
+  test('can multiply with one negative number', () => {
+    actual = multiply(-7, 6);
+    expected = -42;
+    expect(actual).toBe(expected);
+  }
+  );
+
 });
 
 describe('divide', () => {
