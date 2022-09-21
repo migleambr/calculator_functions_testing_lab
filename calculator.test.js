@@ -110,6 +110,19 @@ describe('modulus', () => {
 
 describe('even', () => {
 
+  test('can return true for even number', () => {
+    actual = even(16);
+    expected = true;
+    expect(actual).toBe(expected);
+  }
+  );
+
+  test('can return false for odd number', () => {
+    actual = even(3);
+    expected = false;
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('odd', () => {

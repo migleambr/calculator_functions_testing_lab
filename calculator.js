@@ -19,7 +19,14 @@ const modulus = (a, b) => {
     return modulusNumber;
 };
 
-const even = null;
+const even = a => {
+    modulusNumber = modulus(a, 2);
+    if (modulusNumber == 0) {
+        return true;
+    } else {
+        return false;
+    }
+};
 
 const odd = null;
 
