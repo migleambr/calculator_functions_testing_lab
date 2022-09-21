@@ -38,6 +38,20 @@ describe('sum', () => {
 
 describe('subtract', () => {
 
+  test('can substract two negative numbers', () => {
+    actual = subtract(-5, -25);
+    expected = 20;
+    expect(actual).toBe(expected);
+  }
+  ); 
+
+  test('can subract with one negative number', () => {
+    actual = subtract(20, -5);
+    expected = 25;
+    expect(actual).toBe(expected);
+  }
+  );
+
 });
 
 describe('multiply', () => {
